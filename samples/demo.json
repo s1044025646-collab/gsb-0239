@@ -1,0 +1,24 @@
+{
+  "columns": [
+    { "key": "name", "title": "姓名 Name", "width": 14, "align": "left" },
+    { "key": "city", "title": "城市 City", "width": 10, "align": "center" },
+    { "key": "score", "title": "分数 Score", "width": 8, "align": "right" },
+    { "key": "note", "title": "备注 Notes", "width": 16, "align": "left" }
+  ],
+  "rows": [
+    [
+      "王小明 Alice",
+      "北京",
+    "98",
+      "多行备注：\n第二行会自动换行，café résumé 组合重音。"
+    ],
+    [
+      "Smith-Johnson 超长英文词也会断开",
+      "東京",
+      "100",
+      "家庭表情 👨‍👩‍👧 宽字素不拆分；模糊字符·按窄宽处理。"
+    ],
+    ["", null, "", ""],
+    ["末尾换行演示\n", "London", "7", "空行上面由尾部 \\n 产生"]
+  ]
+}
