@@ -1,0 +1,28 @@
+{
+  "name": "unicode-table-layout",
+  "version": "1.0.0",
+  "description": "本地 Unicode 定宽文本表格换行与对齐后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "utable": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node --experimental-sqlite dist/server.js",
+    "dev": "node --experimental-sqlite --import tsx src/server.ts",
+    "cli": "node --experimental-sqlite --import tsx src/cli.ts",
+    "demo": "node --experimental-sqlite --import tsx src/demo.ts"
+  },
+  "dependencies": {
+    "string-width": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
